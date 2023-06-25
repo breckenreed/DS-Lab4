@@ -1,6 +1,4 @@
-<img width="807" alt="image" src="https://github.com/breckenreed/DS-Lab4/assets/62158298/67a42581-7a88-47c2-9d27-bdd11a38c55e"># DS-Lab4
-
-
+# DS LAB-4 
 
 
 ### Завдання
