@@ -72,14 +72,49 @@ docker run -d -p 8022:8021 -e "PYTHONUNBUFFERED=1" --name message-service2 --net
 
 
 
-### 3.Через HTTP POST записати 10 повідомлень msg1-msg10 через facade-service
+### 3.Через HTTP POST записати 10 повідомлень msg1-msg10 через facade-service  <br />
 
 
 <img width="800" alt="image" src="https://github.com/breckenreed/DS-Lab4/assets/62158298/413f3dd6-5706-4565-b71b-757e3b68e460">
 
-<img width="432" alt="image" src="https://github.com/breckenreed/DS-Lab4/assets/62158298/449a9a1d-10cf-4a31-b742-69f03f8d201b">
+facade-service: <br />
+<img width="425" alt="image" src="https://github.com/breckenreed/DS-Lab4/assets/62158298/9e9ac169-b137-4fbe-944f-9d538778356e">
 
-### 4.Показати які повідомлення отримав кожен з екземплярів logging-service (це має бути видно у логах сервісу)
 
-### 5.Показати які повідомлення отримав кожен з екземплярів messages-service (це має бути видно у логах сервісу)
-### 6.Декілька разів викликати HTTP GET на facade-service та отримати об'єднані дві множини повідомлень - це мають бути повідомлення з logging-service та messages-service
+### 4.Показати які повідомлення отримав кожен з екземплярів logging-service (це має бути видно у логах сервісу)  <br />
+
+1: <br />
+<img width="1165" alt="image" src="https://github.com/breckenreed/DS-Lab4/assets/62158298/640ec440-e960-44d9-bf9f-1b0f04188d60">
+
+2: <br />
+<img width="1173" alt="image" src="https://github.com/breckenreed/DS-Lab4/assets/62158298/844ac3e6-c49e-4c90-b906-3033a5d2e750">
+
+3: <br />
+<img width="1150" alt="image" src="https://github.com/breckenreed/DS-Lab4/assets/62158298/be353de6-a8fe-4261-954f-ba9bd431fdcc">
+
+
+MAP:  <br />
+<img width="1244" alt="image" src="https://github.com/breckenreed/DS-Lab4/assets/62158298/135cbe1b-35c9-4991-97a7-04f8cf6c2c61">
+
+
+### 5.Показати які повідомлення отримав кожен з екземплярів messages-service (це має бути видно у логах сервісу)  <br />
+1: <br />
+<img width="813" alt="image" src="https://github.com/breckenreed/DS-Lab4/assets/62158298/37867e1a-4883-4ee7-adf0-5161f670a5c2">
+
+2: <br />
+<img width="589" alt="image" src="https://github.com/breckenreed/DS-Lab4/assets/62158298/5db06713-80a7-4c84-9cd1-e6255635eaf1">
+
+
+RABBITMQ:  <br />
+<img width="636" alt="image" src="https://github.com/breckenreed/DS-Lab4/assets/62158298/6421d143-403d-4938-acbb-4b842837a3ca">
+
+
+
+
+### 6.Декілька разів викликати HTTP GET на facade-service та отримати об'єднані дві множини повідомлень - це мають бути повідомлення з logging-service та messages-service:  <br />
+<img width="798" alt="image" src="https://github.com/breckenreed/DS-Lab4/assets/62158298/c3a2f809-0a21-4163-bfed-4e976e66f081">
+
+facade-service: <br />
+<img width="1134" alt="image" src="https://github.com/breckenreed/DS-Lab4/assets/62158298/ebc11618-200f-4ffb-be77-2bebb280b239">
+
+
