@@ -13,9 +13,9 @@ docker build -t logging-service .
 
 docker run -d -p 8011:8001 -e "PYTHONUNBUFFERED=1" --name logging-service1 --network hazelcast-network-1 logging-service 
 
-docker run -d -p 8012:8001 -e "PYTHONUNBUFFERED=1" --name logging-serviceNEW2 --network hazelcast-network-1 logging-service_alt
+docker run -d -p 8012:8011 -e "PYTHONUNBUFFERED=1" --name logging-service2 --network hazelcast-network-1 logging-service
 
-docker run -d -p 8013:8001 -e "PYTHONUNBUFFERED=1" --name logging-serviceNEW3 --network hazelcast-network-1 logging-service_alt 
+docker run -d -p 8013:8011 -e "PYTHONUNBUFFERED=1" --name logging-service3 --network hazelcast-network-1 logging-service
 ```
 якщо контейнери кластеру Hazelcast та Hazelcast MC наразі не запущені, то потрібно запуситити і їх: <br />
 
@@ -72,10 +72,12 @@ docker run -d -p 8022:8021 -e "PYTHONUNBUFFERED=1" --name message-service2 --net
 
 ### 3.Через HTTP POST записати 10 повідомлень msg1-msg10 через facade-service  <br />
 
+Почергово змінюємо контент json-файлу для кожного запиту:  <br />
 
-<img width="800" alt="image" src="https://github.com/breckenreed/DS-Lab4/assets/62158298/413f3dd6-5706-4565-b71b-757e3b68e460">
+<img width="790" alt="image" src="https://github.com/breckenreed/DS-Lab4/assets/62158298/af815773-495a-4f72-86e8-0ba885de0424">
 
-facade-service: <br />
+
+Логи facade-service: <br />
 <img width="425" alt="image" src="https://github.com/breckenreed/DS-Lab4/assets/62158298/9e9ac169-b137-4fbe-944f-9d538778356e">
 
 
