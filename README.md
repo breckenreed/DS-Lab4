@@ -13,11 +13,11 @@ docker network create hazelcast-network-1
 
 docker build -t logging-service .
 
-docker run -d -p 8011:8001 -e "PYTHONUNBUFFERED=1" --name logging-service1 --network hazelcast-network-1 logging-service <br />
+docker run -d -p 8011:8001 -e "PYTHONUNBUFFERED=1" --name logging-service1 --network hazelcast-network-1 logging-service 
 
-docker run -d -p 8012:8001 -e "PYTHONUNBUFFERED=1" --name logging-serviceNEW2 --network hazelcast-network-1 logging-service_alt <br />
+docker run -d -p 8012:8001 -e "PYTHONUNBUFFERED=1" --name logging-serviceNEW2 --network hazelcast-network-1 logging-service_alt
 
-docker run -d -p 8013:8001 -e "PYTHONUNBUFFERED=1" --name logging-serviceNEW3 --network hazelcast-network-1 logging-service_alt <br />
+docker run -d -p 8013:8001 -e "PYTHONUNBUFFERED=1" --name logging-serviceNEW3 --network hazelcast-network-1 logging-service_alt 
 ```
 якщо контейнери кластеру Hazelcast та Hazelcast MC наразі не запущені, то потрібно запуситити і їх: <br />
 
