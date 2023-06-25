@@ -5,6 +5,7 @@ import uuid
 import pika
 import random
 
+connection = pika.BlockingConnection(pika.ConnectionParameters(host='127.0.0.1'))
 
 def forward_get():
     port_logging = str(8010+random.randint(1,3))
@@ -46,10 +47,7 @@ def forward_post():
         status = logs_response.status_code
         print('1. Received response to POST from logging service:', status)
 
-        connection = pika.BlockingConnection(
-        pika.ConnectionParameters(host='127.0.0.1'))
         channel = connection.channel()
-
         channel.queue_declare(queue='LAB4')
 
         channel.basic_publish(exchange='', routing_key='LAB4', body=flask.request.json.get('msg'))
